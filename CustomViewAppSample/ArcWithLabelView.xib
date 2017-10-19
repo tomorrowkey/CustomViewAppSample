@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArcWithLabelView" customModule="CustomViewAppSample" customModuleProvider="target">
+            <connections>
+                <outlet property="arcView" destination="M5o-R8-pIa" id="kVk-Zg-dvM"/>
+                <outlet property="label" destination="VBt-8j-bTs" id="OgI-3V-avd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5o-R8-pIa" customClass="ArcView" customModule="CustomViewAppSample" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="199"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" red="0.99215686270000003" green="0.51764705879999995" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startTheta">
+                            <real key="value" value="-90"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endTheta">
+                            <real key="value" value="90"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBt-8j-bTs">
+                    <rect key="frame" x="0.0" y="219" width="240" height="21"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="M5o-R8-pIa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7hn-8y-Swj"/>
+                <constraint firstItem="VBt-8j-bTs" firstAttribute="top" secondItem="M5o-R8-pIa" secondAttribute="bottom" constant="20" id="B1p-oC-2UM"/>
+                <constraint firstItem="VBt-8j-bTs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DQ3-hJ-OHG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="M5o-R8-pIa" secondAttribute="trailing" id="Fnm-fr-bbE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VBt-8j-bTs" secondAttribute="bottom" id="pOk-bz-Cee"/>
+                <constraint firstItem="M5o-R8-pIa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rqR-ln-buo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VBt-8j-bTs" secondAttribute="trailing" id="uMk-nb-1LD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="5" y="-119"/>
+        </view>
+    </objects>
+</document>
